@@ -109,8 +109,8 @@ def build_phrases(corpus_path: Path, out_path: Path) -> None:
             f.write(" ".join(sent) + "\n")
 
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
-    bigram_model.save(str(MODEL_DIR / "bigram_phrases.pkl"))
-    trigram_model.save(str(MODEL_DIR / "trigram_phrases.pkl"))
+    bigram_model.save(str(MODEL_DIR / "devicealchemy_bigram.pkl"))
+    trigram_model.save(str(MODEL_DIR / "devicealchemy_trigram.pkl"))
     log.info("Phrase models saved.")
 
 
@@ -136,8 +136,8 @@ def train(use_phrases: bool = True) -> Word2Vec:
         **WORD2VEC_CONFIG,
     )
 
-    model_path = MODEL_DIR / "materials_w2v.model"
-    vec_path   = MODEL_DIR / "materials_w2v.kv"
+    model_path = MODEL_DIR / "devicealchemy_w2v.model"
+    vec_path   = MODEL_DIR / "devicealchemy_w2v.kv"
 
     model.save(str(model_path))
     model.wv.save(str(vec_path))
