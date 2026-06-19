@@ -14,7 +14,7 @@ This repository contains a domain-specific Word2Vec model trained on openly lice
 | Property              | Value                          |
 |-----------------------|--------------------------------|
 | Model Type            | Word2Vec (Skip-gram)           |
-| Vector Dimension      | 300                            |
+| Vector Dimension      | 200                            |
 | Training Corpus       | ~120 million words             |
 | Domain                | Materials Science, Condensed Matter Physics, Spintronics, Electronic Devices |
 | Framework             | Gensim                         |
