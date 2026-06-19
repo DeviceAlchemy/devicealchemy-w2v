@@ -6,13 +6,8 @@ This model is a **sample** of one of the many building block models used to enab
 
 ## Overview
 
-This repository contains a domain-specific Word2Vec model trained on a large corpus of scientific literature (primarily Gold Open Access abstracts from materials science, physics, and engineering journals). 
+This repository contains a domain-specific Word2Vec model trained on openly licensed (CC BY) scientific text. The model captures semantic relationships between materials, elements, physical phenomena, and device concepts.
 
-The model learns semantic relationships between materials, elements, physical phenomena, and device concepts, enabling:
-
-- Materials stack prediction
-- Similarity search between compounds and phenomena
-- Scientific concept exploration
 
 ## Model Details
 
@@ -20,7 +15,7 @@ The model learns semantic relationships between materials, elements, physical ph
 |-----------------------|--------------------------------|
 | Model Type            | Word2Vec (Skip-gram)           |
 | Vector Dimension      | 300                            |
-| Training Corpus       | ~2 Million scientific abstracts |
+| Training Corpus       | ~120 million words             |
 | Domain                | Materials Science, Condensed Matter Physics, Spintronics, Electronic Devices |
 | Framework             | Gensim                         |
 | Files Included        | Full model + KeyedVectors      |
